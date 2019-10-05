@@ -1,0 +1,17 @@
+{
+  "name": "typescript_tests",
+  "version": "1.0.0",
+  "description": "A place to run my typescript tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "Alex Costea",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.6.3",
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0"
+  }
+}

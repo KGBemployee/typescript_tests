@@ -1,3 +1,5 @@
+import { Context } from '@azure/functions';
+import { mockContext} from './test_utils/MockContext';
 
 const context = {
     log: {
@@ -8,7 +10,13 @@ const context = {
     }
 }
 
-test("my mock test",() => {
+function logstuff(context: Context) {
+
+}
+
+test("my mock test", () => {
+
+    logstuff(mockContext);
 
     context.log.info('it\'s a sunny day');
     context.log.error('it\'s a sunny day');
